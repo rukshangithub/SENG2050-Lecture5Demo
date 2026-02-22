@@ -14,7 +14,7 @@ public class PasswordSecurity {
         return secureRandom.nextDouble(0, 1);            
    }
 
-    // Hashes the passwor using Argon2    
+    // Hashes the password using Argon2    
     public String hashPassword(String password, Double salt)    {
 
         // Declare an instance of Argon2 class
@@ -37,5 +37,5 @@ public class PasswordSecurity {
         }
         return false;
     }
-
 }
+
