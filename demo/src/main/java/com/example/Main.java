@@ -4,9 +4,7 @@ import java.io.File;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-
 import org.apache.catalina.Context;
-import org.apache.catalina.LifecycleException;
 import org.apache.catalina.startup.Tomcat;
 import org.apache.catalina.connector.Connector;
 import org.apache.coyote.http11.Http11NioProtocol;
