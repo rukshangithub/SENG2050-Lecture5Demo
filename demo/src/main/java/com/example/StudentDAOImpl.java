@@ -108,9 +108,7 @@ public class StudentDAOImpl implements StudentDAO {
                 students.add(new Student(rs.getString("stdNo"), rs.getString("givenNames"), 
                         rs.getString("lastName"), rs.getString("passwordHash"), rs.getDouble("passwordSalt")));
             }
-
-            rs.close();
-
+            
         } catch (SQLException e) {
             e.printStackTrace();
         }
