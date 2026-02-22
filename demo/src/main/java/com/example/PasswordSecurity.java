@@ -21,7 +21,7 @@ public class PasswordSecurity {
         Argon2Function argon2 = Argon2Function.getInstance(15, 2, 1, 32, Argon2.ID);
         
         // Generating a hash
-        Hash hash = Password.hash("password")
+        Hash hash = Password.hash(password)
                             .addSalt(salt.toString())
                             .with(argon2);
         
