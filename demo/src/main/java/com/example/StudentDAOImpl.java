@@ -8,7 +8,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
@@ -32,7 +31,7 @@ public class StudentDAOImpl implements StudentDAO {
             Document document = documentBuilder.parse(file);
             String jdbc = document.getElementsByTagName("jdbcDriver").item(0).getTextContent();
             String databaseURL = document.getElementsByTagName("databaseURL").item(0).getTextContent();
-            String usr = document.getElementsByTagName("user").item(0).getTextContent();
+            String usr = document.getElementsByTagName("username").item(0).getTextContent();
             String pwd = document.getElementsByTagName("password").item(0).getTextContent();
      
             // Setting the connection pool properties
