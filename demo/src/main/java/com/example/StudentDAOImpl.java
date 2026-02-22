@@ -70,9 +70,6 @@ public class StudentDAOImpl implements StudentDAO {
 
             stmt.executeUpdate();
 
-            stmt.close();
-            conn.close();
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -92,8 +89,6 @@ public class StudentDAOImpl implements StudentDAO {
             }
 
             rs.close();
-            stmt.close();
-            conn.close();
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -115,8 +110,6 @@ public class StudentDAOImpl implements StudentDAO {
             }
 
             rs.close();
-            stmt.close();
-            conn.close();   
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -136,8 +129,6 @@ public class StudentDAOImpl implements StudentDAO {
             stmt.setString(3, student.getStdNo());
             stmt.executeUpdate();
 
-            stmt.close();
-            conn.close();
             
         } catch (SQLException e) {
             e.printStackTrace();
@@ -152,9 +143,6 @@ public class StudentDAOImpl implements StudentDAO {
 
             stmt.setString(1, stdNo);
             stmt.executeUpdate();
-
-            stmt.close();
-            conn.close();
 
         } catch (SQLException e) {
             e.printStackTrace();
