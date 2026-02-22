@@ -1,6 +1,6 @@
 <credentials>
     <username>UniX_admin</username>
-    <password>P@ssword</password>
+    <password>P@ssword1</password>
     <databaseURL>jdbc:mysql://localhost:3306/unix</databaseURL>
     <jdbcDriver>com.mysql.cj.jdbc.Driver</jdbcDriver>
 </credentials>
